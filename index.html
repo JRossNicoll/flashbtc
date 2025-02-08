@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBNB Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-orange-500/20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="bitcoin" class="h-8 w-8 text-orange-500"></i>
+                    <span class="text-xl font-bold text-orange-500">WBNB</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <button class="text-white hover:text-orange-500 transition-colors">Platform</button>
+                    <button class="text-white hover:text-orange-500 transition-colors">Security</button>
+                    <button class="text-white hover:text-orange-500 transition-colors">Features</button>
+                    <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors">
+                        Launch App
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="relative z-10">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    Professional 
+                    <span class="text-orange-500">WBNB</span>
+                    Trading Platform
+                </h1>
+                <p class="text-xl text-gray-400 mb-8 max-w-2xl">
+                    Enterprise-grade security and professional trading tools for serious WBNB traders and institutions.
+                </p>
+                <div class="flex space-x-4">
+                    <button class="bg-orange-500 text-white px-6 py-3 rounded flex items-center space-x-2 hover:bg-orange-600 transition-colors">
+                        <span>Get Started</span>
+                        <i data-lucide="chevron-right" class="h-5 w-5"></i>
+                    </button>
+                    <button class="border border-orange-500 text-orange-500 px-6 py-3 rounded hover:bg-orange-500/10 transition-colors">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Market Statistics -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-2">Live Market Data</h2>
+                <p class="text-gray-400">Real-time cryptocurrency market statistics and analytics</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- BTC Stats Card -->
+                <div class="border border-orange-500 rounded-lg p-6 bg-black/50 card-hover">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center">
+                                <i data-lucide="bitcoin" class="h-6 w-6 text-orange-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Bitcoin</h3>
+                                <p class="text-gray-400">BTC/USD</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-2xl font-bold btc-price">Loading...</p>
+                            <p class="btc-change text-green-500">Loading...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">24h Volume</p>
+                            <p class="font-medium btc-volume">Loading...</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">Market Cap</p>
+                            <p class="font-medium btc-market-cap">Loading...</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">24h High</p>
+                            <p class="font-medium btc-high">Loading...</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">24h Low</p>
+                            <p class="font-medium btc-low">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ETH Stats Card -->
+                <div class="border border-orange-500 rounded-lg p-6 bg-black/50 card-hover">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center">
+                                <i data-lucide="wallet" class="h-6 w-6 text-orange-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Ethereum</h3>
+                                <p class="text-gray-400">ETH/USD</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-2xl font-bold eth-price">Loading...</p>
+                            <p class="eth-change text-green-500">Loading...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">24h Volume</p>
+                            <p class="font-medium eth-volume">Loading...</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">Market Cap</p>
+                            <p class="font-medium eth-market-cap">Loading...</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">24h High</p>
+                            <p class="font-medium eth-high">Loading...</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">24h Low</p>
+                            <p class="font-medium eth-low">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Market Metrics -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border border-orange-500/20 rounded-lg p-6 hover:border-orange-500 transition-colors card-hover">
+                    <h4 class="text-lg font-semibold mb-4">Global Market Cap</h4>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Total Value</span>
+                            <span class="text-xl font-bold">$2.1T</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">24h Change</span>
+                            <span class="text-green-500">+2.8%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-orange-500/20 rounded-lg p-6 hover:border-orange-500 transition-colors card-hover">
+                    <h4 class="text-lg font-semibold mb-4">Trading Volume</h4>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">24h Volume</span>
+                            <span class="text-xl font-bold">$142B</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Active Pairs</span>
+                            <span class="text-orange-500">824</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-orange-500/20 rounded-lg p-6 hover:border-orange-500 transition-colors card-hover">
+                    <h4 class="text-lg font-semibold mb-4">Network Health</h4>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Total Nodes</span>
+                            <span class="text-xl font-bold">15,432</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Network Status</span>
+                            <span class="text-green-500">Optimal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Status Section -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="border border-orange-500 rounded-lg p-8 bg-black/50 backdrop-blur-sm">
+                <div class="flex items-center justify-between mb-8">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 rounded-full bg-orange-500/10 flex items-center justify-center">
+                            <i data-lucide="shield" class="h-6 w-6 text-orange-500"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold">Security Operations Center</h2>
+                            <p class="text-gray-400">Real-time system monitoring and threat detection</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2 bg-green-500/10 px-4 py-2 rounded-full">
+                        <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                        <span class="text-green-500 font-medium">All Systems Operational</span>
+                    </div>
+                </div>
+
+                <!-- System Status and Footer -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <h3 class="text-lg font-semibold text-orange-500">Core Systems</h3>
+                        <div class="space-y-4">
+                            <!-- Add system status indicators here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-orange-500/20 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="bitcoin" class="h-6 w-6 text-orange-500"></i>
+                    <span class="text-orange-500 font-bold">WBNB</span>
+                </div>
+                <div class="text-sm text-gray-400">
+                    © 2025 WBNB Platform. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
